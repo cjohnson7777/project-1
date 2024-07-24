@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
 }
 
@@ -13,14 +13,109 @@ header{
     margin-bottom:15px;
 }
 
-.body, .pages{
+.body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.pages{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .fan-theories, .fan-chatter, .fan-random{
     border: black 2px solid;
-    width: 50%;
+    width: 85%;
     margin: 0px 0px 20px 20px;
+    height: 250px;
+}
+
+.left, .right{
+    flex: 1;
+    padding: 10px;
+}
+
+.right .blurb{
+    margin-bottom: 20px;
+}
+
+.art-page {
+    border: black 2px solid;
+    height: 250px;
+    width: 85%;
+} */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5;
+    color: #2C3E50;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+
+h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.section-title {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.fan-theories, .fan-chatter, .fan-random {
+    border: 2px solid #2C3E50; /* Dark Grey border */
+    background-color: #FFFFFF; /* White background */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.blurb {
+ 
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.art-page {
+    border-radius: 8px;
+    padding: 20px;
     height: 250px;
 }
